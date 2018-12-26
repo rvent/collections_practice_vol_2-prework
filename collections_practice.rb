@@ -38,6 +38,8 @@ end
 
 def merge_data(keys, data)
   keys.map do |key|
-    key
+    key.each do |k, v|
+      k
+    end
   end
 end
