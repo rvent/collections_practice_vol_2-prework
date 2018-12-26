@@ -35,3 +35,7 @@ def count_elements(array)
   end
   count_hash.values
 end
+
+def merge_data(keys, data)
+  
+end
