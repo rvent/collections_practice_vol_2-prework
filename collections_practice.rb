@@ -28,5 +28,5 @@ def count_elements(array)
     count[ele] += 1
     count_array << count
   end
-   count_array
+   count_array.uniq
 end
