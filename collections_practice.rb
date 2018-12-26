@@ -40,7 +40,7 @@ def merge_data(keys, data)
   merged_data = []
   data_copy = data
   keys.each do |k,v|
-    data_copy[v][k] = v
+    data_copy[v] = 
   end
   data_copy.values
 end
