@@ -19,3 +19,20 @@ end
 def remove_non_strings(array)
   array.delete_if {|ele| !ele.is_a?(String)}
 end
+
+def count_elements(array)
+  count = Hash.new {0}
+  count_hash = {}
+  count_array = []
+  array.each do |ele|
+    count[ele] += 1
+    count_hash[:count] = count
+    if ele.class == Hash
+      ele.each {|k, v| count_hash[k] = v}
+    else
+      count_hash[:name] = ele
+    end
+    count_array << count_hash
+  end
+   
+end
