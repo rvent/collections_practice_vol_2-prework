@@ -43,8 +43,8 @@ def merge_data(keys, data)
       if ele[v] =! nil
         ele[v][k] = v
       end
-      merge_data << ele[v]
+      merged_data << ele[v]
     end
   end
-  merge_data
+  merged_data
 end
