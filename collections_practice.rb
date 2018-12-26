@@ -15,3 +15,7 @@ end
 def first_wa(array)
   array.find { |ele| ele[0..1] == "wa"}
 end
+
+def remove_non_strings(array)
+  array.delete_if {|ele| !ele.is_a?(String)}
+end
