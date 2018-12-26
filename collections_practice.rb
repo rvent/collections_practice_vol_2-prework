@@ -32,6 +32,7 @@ def count_elements(array)
     else
       count_hash[ele][:name] = ele
     end
+    count_array << count_hash
   end
-  count_hash.values
+  count_array
 end
