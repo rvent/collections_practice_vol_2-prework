@@ -26,13 +26,7 @@ def count_elements(array)
   count_array = []
   array.each do |ele|
     count[ele] += 1
-    count_hash[:count] = count[ele]
-    if ele.class == Hash
-      ele.each {|k, v| count_hash[k] = v}
-    else
-      count_hash[:name] = ele
-    end
-    count_array << count_hash
+    count_array << count_ele
   end
    count_array
 end
