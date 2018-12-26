@@ -39,9 +39,11 @@ end
 def merge_data(keys, data)
   merged_data = []
   data.each do |ele|
-    keys.each do |k,v|
-      if ele[v] =! nil
-        ele[v][k] = v
+    keys.each do |key|
+      key.each do |k,v|
+        if ele[v] =! nil
+          ele[v][k] = v
+        end
       end
     end
   end
