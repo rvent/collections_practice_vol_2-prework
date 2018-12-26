@@ -38,8 +38,13 @@ end
 
 def merge_data(keys, data)
   merged_data = []
-  data_copy = data
-  # keys.each do |k,v|
-  #   data_copy[v] = "hello"
-  # end
+  data.each do |ele|
+    keys.each do |k,v|
+      if ele[v] =! nil
+        ele[v][k] = v
+      end
+      merge_data << ele[v]
+    end
+  end
+  merge_data
 end
