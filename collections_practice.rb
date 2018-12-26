@@ -37,5 +37,10 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  
+  merged_data = []
+  data_copy = data
+  keys.each do |k,v|
+    data_copy[v][k] = v
+  end
+  data_copy.values
 end
