@@ -26,7 +26,8 @@ def count_elements(array)
   count_array = []
   array.each do |ele|
     count[ele] += 1
-    count_array << count[ele]
+    count_hash[]
+    count_array << count
   end
    count_array
 end
