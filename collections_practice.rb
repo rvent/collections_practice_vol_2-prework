@@ -34,5 +34,5 @@ def count_elements(array)
     end
     count_array << count_hash
   end
-   
+   count_array
 end
