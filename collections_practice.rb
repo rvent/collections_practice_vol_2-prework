@@ -41,7 +41,7 @@ def merge_data(keys, data)
   data.each do |ele|
     keys.each do |key|
       key.each do |k, v|
-        merged_data << ele[k]
+        merged_data << ele[v]
       end
     end
   end
