@@ -10,4 +10,5 @@ end
 
 def contain_a(array)
   a_words = array.select { |ele|(ele.split).include?("a") }
+  a_words
 end
