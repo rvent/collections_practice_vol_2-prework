@@ -42,5 +42,4 @@ def merge_data(keys, data)
   # keys.each do |k,v|
   #   data_copy[v] = "hello"
   # end
-  data_copy.value
 end
