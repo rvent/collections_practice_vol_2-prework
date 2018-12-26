@@ -43,4 +43,5 @@ def merge_data(keys, data)
       merged_data << k
     end
   end
+  merged_data
 end
