@@ -9,6 +9,6 @@ def begins_with_r(array)
 end
 
 def contain_a(array)
-  a_words = array.select { |ele|(ele.split).include?("a") }
+  a_words = array.select { |ele| ele.include?("a") }
   a_words
 end
