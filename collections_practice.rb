@@ -23,7 +23,6 @@ end
 def count_elements(array)
   count = Hash.new {0}
   count_hash = {}
-  count_array = []
   array.each do |ele|
     count[ele] += 1
     count_hash[ele] = {:count => count[ele]}
@@ -38,11 +37,11 @@ end
 
 def merge_data(keys, data)
   merged_data = []
-  data.each do |ele|
+  data.each do |info|
     keys.each do |key|
       key.each do |k, v|
-        ele[v][k] = v
-        merged_data << ele[v]
+        info[v][k] = v
+        merged_data << info[v]
       end
     end
   end
@@ -57,11 +56,11 @@ end
 
 def organize_schools(schools)
   organized_schools = {}
-  schools.each do |k, v|
-    if organized_schools[v[:location]] == nil
-      organized_schools[v[:location]] = [k]
+  schools.each do |school, area|
+    if organized_schools[area[:location]] == nil
+      organized_schools[area[:location]] = [school]
     else
-      organized_schools[v[:location]] << k
+      organized_schools[area[:location]] << school
     end
   end
   organized_schools
