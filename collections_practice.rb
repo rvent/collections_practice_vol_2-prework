@@ -37,9 +37,10 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
+  merged_data = []
   keys.map do |key|
     key.each do |k, v|
-      k
+      merged_data << k
     end
   end
 end
