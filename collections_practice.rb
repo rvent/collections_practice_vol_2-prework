@@ -39,8 +39,8 @@ end
 def merge_data(keys, data)
   merged_data = []
   data_copy = data
-  keys.each do |k,v|
-    data_copy[v] = "hello"
-  end
+  # keys.each do |k,v|
+  #   data_copy[v] = "hello"
+  # end
   data_copy.values
 end
