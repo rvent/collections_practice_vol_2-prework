@@ -11,3 +11,8 @@ end
 def contain_a(array)
   array.select { |ele| ele.include?("a") }
 end
+
+def first_wa(array)
+  array.find { |ele| ele[0..1] == "wa"}
+end
+  
