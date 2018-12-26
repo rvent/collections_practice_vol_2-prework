@@ -38,11 +38,11 @@ end
 
 def merge_data(keys, data)
   merged_data = []
-  data.each do |ele|
+  data.map do |ele|
     keys.each do |key|
       key.each do |k, v|
         ele[v][k] = v
-        merged_data << ele[v]
+        #merged_data << ele[v]
       end
     end
   end
